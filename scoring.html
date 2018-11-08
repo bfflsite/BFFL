@@ -102,8 +102,9 @@
 <tr><td>Pick Up Amount</td>
     <td>Each owner gets five pick ups.  An additional pick up is awarded for
     each player that is either placed on IR or cut and not on an NFL roster,
-    prior to the end of the week 15 games (fantasy playoff start).  All pick
-    ups may be traded.</td></tr>
+    prior to the end of the week 15 games (fantasy playoff start).  No pick
+    ups are awarded if the player was already on IR or not on a roster at the
+    time he was acquired.  All pick ups may be traded.</td></tr>
 <tr><td>Pick Up Deadline</td>
     <td>Pick up requests that are made prior to midnight Tuesday will not be
     granted until Wednesday morning.  The priority order is based on win/loss
@@ -111,8 +112,13 @@
     puts an owner at the end of the priority order for any additional pick
     ups.  The priority order resets each week.<br><br>
     After midnight Tuesday, all pick ups are first come, first served until
-    1:00 Sunday, or at the kickoff of that player's game if it is
-    sooner.</td></tr>
+    the kickoff of that player's game.  If the player is on a bye or not on
+    an NFL roster, then until 1:00 on Sunday.</td></tr>
+<tr><td>Rookie Eligibility</td>
+    <td>Rookie eligibility is determined by nfl.com.  A player must have a
+    status of Rookie.  A player that is 1st Season is not a rookie.  Kickers
+    have an additional requirement, they must have been selected in either
+    that year's NFL draft or BFFL draft.</td></tr>
 <tr><td>Scoring Changes</td>
     <td>Any scoring changes or scoring mistakes must be noticed and settled
     prior to 1:00 Sunday of the following week.  After that, all scoring is
